@@ -1,93 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Login</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-			<script src="../script/script.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="../script/script.js"></script>
+    <link rel="stylesheet" href="../asset/style/login.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../asset/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../asset/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../asset/icon/favicon-16x16.png">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Criar uma Conta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou use o seu email para se registrar</span>
+                <input type="text" placeholder="Nome" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
+                <button id="criarbotao">Criar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Login</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>ou usar a sua conta</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
+                <a href="#">Esqueceu-se da sua senha?</a>
+                <button id="entrarbotao">Entrar</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bem vindo de volta!</h1>
+                    <p>Para se manter conectado, inicie sessão com os seus dados pessoais</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Ola, novo por aqui?</h1>
+                    <p>Insira os seus dados e vamos cuidar do seu pet juntos</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+        const criarbotao = document.getElementById('criarbotao');
+        const entrarbotao = document.getElementById('entrarbotao');
 
-		<link rel="stylesheet" href="..//asset/style/login.css" />
-	</head>
-	<body>
-		<!-- <nav class="menu">
-			<h3>Mypet</h3>
-		</nav> -->
-		<div class="container" id="container">
-			<div class="form-container sign-up-container">
-				<form action="#">
-					<h1>Criar uma Conta</h1>
-					<div class="social-container">
-						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-						<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-					</div>
-					<span>ou use o seu email para se registrar</span>
-					<input type="text" placeholder="Nome" />
-					<input type="email" placeholder="Email" />
-					<input type="password" placeholder="Senha" />
-					<button id="criarbotao">Criar</button>
-				</form>
-			</div>
-			<div class="form-container sign-in-container">
-				<form action="#">
-					<h1>Login</h1>
-					<div class="social-container">
-						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-						<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-					</div>
-					<span>ou usar a sua conta</span>
-					<input type="email" placeholder="Email" />
-					<input type="password" placeholder="Senha" />
-					<a href="#">Esqueceu-se da sua senha?</a>
-					<button id="entrarbotao">Entrar</button>
-				</form>
-			</div>
-			<div class="overlay-container">
-				<div class="overlay">
-					<div class="overlay-panel overlay-left">
-						<h1>Bem vindo de volta!</h1>
-						<p>
-							Para se manter conectado, inicie sessão com os seus dados pessoais
-						</p>
-						<button class="ghost" id="signIn">Sign In</button>
-					</div>
-					<div class="overlay-panel overlay-right">
-						<h1>Ola, novo por aqui?</h1>
-						<p>Insira os seus dados e vamos cuidar do seu pet juntos</p>
-						<button class="ghost" id="signUp">Sign Up</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script>
-			const signUpButton = document.getElementById('signUp');
-			const signInButton = document.getElementById('signIn');
-			const container = document.getElementById('container');
-			const criarbotao = document.getElementById('criarbotao')
-			const entrarbotao = document.getElementById('entrarbotao')
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
 
-			signUpButton.addEventListener('click', () => {
-				container.classList.add('right-panel-active');
-			});
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
 
-			signInButton.addEventListener('click', () => {
-				container.classList.remove('right-panel-active');
-			});
+        criarbotao.addEventListener('click', (event) => {
+            event.preventDefault(); // Impede que o formulário seja enviado
+            window.location.href = '../page/cat-loader.html';
+        });
 
-			criarbotao.addEventListener('click', (event) => {
-    event.preventDefault(); // Impede que o formulário seja enviado
-    window.location.href = '../page/cat-loader.html';
-});
-
-entrarbotao.addEventListener('click', (event) => {
-    event.preventDefault(); // Impede que o formulário seja enviado
-    window.location.href = '../page/cat-loader.html';
-});
-
-		</script>
-	</body>
+        entrarbotao.addEventListener('click', (event) => {
+            event.preventDefault(); // Impede que o formulário seja enviado
+            window.location.href = '../page/cat-loader.html';
+        });
+    </script>
+</body>
 </html>

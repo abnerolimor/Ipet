@@ -1,0 +1,69 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background-color: #ec1839;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.vaccination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.vaccination-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.vaccination-card h2 {
+    font-size: 24px;
+    color: #ec1839;
+    margin-bottom: 20px;
+}
+
+.vaccination-card table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.vaccination-card th, .vaccination-card td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.vaccination-card th {
+    background-color: #f4f4f4;
+    font-weight: 600;
+}
+
+.vaccination-card td {
+    font-size: 14px;
+}
+
+.vaccination-card td:nth-child(3) {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    color: #fff;
+}

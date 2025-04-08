@@ -1,0 +1,134 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background-color: #ec1839;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.user-profile {
+    flex: 3;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.user-info h2 {
+    font-size: 24px;
+    color: #ec1839;
+    margin-bottom: 10px;
+}
+
+.user-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.user-details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.user-details li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.edit-button {
+    background-color: #ec1839;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #d01732;
+}
+
+.pets-sidebar {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.pets-sidebar h2 {
+    font-size: 20px;
+    color: #ec1839;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pets-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pet-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.pet-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.pet-link {
+    font-size: 16px;
+    color: #ec1839;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pet-link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    color: #fff;
+}

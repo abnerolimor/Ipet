@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" sizes="180x180" href="../asset/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../asset/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../asset/icon/favicon-16x16.png">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <link rel="stylesheet" href="../asset/style/motopet.css">
+
+      <title>Matopet</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="../page/home.html" class="nav__logo">MotoPet</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">lorem</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">lorem</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">lorem</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">lorem</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">lorem</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Search button -->
+               <i class="ri-search-line nav__search" id="search-btn"></i>
+
+               <!-- Login button -->
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="O que voce deseja?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login" id="login">
+         <form action="" class="login__form">
+            <h2 class="login__title">Entrar</h2>
+            
+            <div class="login__group">
+               <div>
+                  <label for="email" class="login__label">Email</label>
+                  <input type="email" placeholder="Escreva seu email" id="email" class="login__input">
+               </div>
+               
+               <div>
+                  <label for="password" class="login__label">Senha</label>
+                  <input type="password" placeholder="Senha" id="password" class="login__input">
+               </div>
+            </div>
+
+            <div>
+               <p class="login__signup">
+                  Nao faz parte da equipe <a href="#">cadastre-se</a>
+               </p>
+   
+               <a href="#" class="login__forgot">
+                  esqueceu a senha
+               </a>
+   
+               <button type="submit" class="login__button">Entrar</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+                                  <!--==================== MAIN ====================-->
+                                  <main class="main">
+                                    <img src="#" alt="image" class="main__bg">
+                           
+                                    <!-- Título principal -->
+                                    <section class="main__content">
+                                       <h1 class="main__title">Junte-se à equipe MotoPet</h1>
+                                       <p class="main__text">
+                                          No MotoPet, estamos sempre em busca de pessoas apaixonadas por pets e que desejam fazer a diferença. 
+                                          Venha fazer parte de uma equipe dedicada a oferecer os melhores serviços de transporte e cuidados para nossos amigos de quatro patas.
+                                       </p>
+                           
+                                       <!-- Subtítulo com subinformações -->
+                                       <h2 class="main__subtitle">Por que trabalhar conosco?</h2>
+                                       <ul class="main__info">
+                                          <li>Ambiente de trabalho acolhedor e colaborativo</li>
+                                          <li>Oportunidades de crescimento profissional</li>
+                                          <li>Contribua para o bem-estar de pets e seus donos</li>
+                                       </ul>
+                  
+                                       <!-- Blocos de texto lado a lado -->
+                                       <!-- <div class="main__blocks">
+                                          <div class="main__block">
+                                             <h3>Flexibilidade</h3>
+                                             <p>Trabalhe em horários flexíveis que se ajustam à sua rotina.</p>
+                                          </div>
+                                          <div class="main__block">
+                                             <h3>Treinamento</h3>
+                                             <p>Receba treinamento especializado para oferecer o melhor serviço.</p>
+                                          </div>
+                                          <div class="main__block">
+                                             <h3>Reconhecimento</h3>
+                                             <p>Seja valorizado por suas contribuições e conquistas.</p>
+                                          </div>
+                                       </div> -->
+                                    </section>
+                                 </main>
+
+
+      
+      <!--=============== MAIN JS ===============-->
+      <script src="../script/motopet.js"></script>
+      <script> 
+         document.querySelector('.login__form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Bloqueia o envio do formulário
+    window.location.href = '../page/perfilMotoPet.html'; // Redireciona para a página desejada
+});
+
+      </script>
+   </body>
+</html>

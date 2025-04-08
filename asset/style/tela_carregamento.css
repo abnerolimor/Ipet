@@ -32,8 +32,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 3em;
-  height: 2em;
+  width: 3em; /*3em*/
+  height: 2em; /*2em*/
   transform: translate(-50%, -50%);
 }
 
@@ -41,7 +41,7 @@ body {
   animation: loop 2s cubic-bezier(0.6, 0, 0.4, 1)
                                 infinite running;
   background: linear-gradient(90deg,
-                        white 20%,
+                        rgb(255, 255, 255) 20%,
                   #e6e6e6 20% 80%,
                        white 80%);
   border-radius: 0.25em;
@@ -53,8 +53,8 @@ body {
 }
 
 .cat__segment:first-of-type {
-  width: 4em;
-  height: 4em;
+  width: 4em; /*4em*/
+  height: 4em; /*4em*/
   z-index: 1;
 }
 .cat__segment:first-of-type:before {

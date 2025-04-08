@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="apple-touch-icon" sizes="180x180" href="../asset/icon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../asset/icon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../asset/icon/favicon-16x16.png">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="../asset/style/perfilMotoPet.css">
+
+   <title>Perfil MotoPet</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">MotoPet</a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="#" class="nav__link">Início</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">Sobre</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">Serviços</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">Contato</a></li>
+               <li class="nav__item"><a href="#" class="nav__link">Ajuda</a></li>
+            </ul>
+         </div>
+         <div class="nav__actions">
+            <!-- <i class="ri-user-line nav__login" id="login-btn"></i> -->
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== PERFIL ====================-->
+   <main class="main">
+      <section class="profile container">
+         <div class="profile__header">
+            <img src="../asset/image/perfil.jpg" alt="Foto de Perfil" class="profile__img">
+            <h1 class="profile__name">Nome do Usuário</h1>
+            <p class="profile__role">Função: Motorista</p>
+         </div>
+
+         <div class="profile__details">
+            <h2 class="profile__title">Informações Pessoais</h2>
+            <ul class="profile__info">
+               <li><strong>Email:</strong> usuario@email.com</li>
+               <li><strong>Telefone:</strong> (11) 99999-9999</li>
+               <li><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo - SP</li>
+            </ul>
+         </div>
+
+         <div class="profile__stats">
+            <h2 class="profile__title">Estatísticas</h2>
+            <ul class="profile__info">
+               <li><strong>Corridas realizadas:</strong> 120</li>
+               <li><strong>Avaliação média:</strong> 4.8/5</li>
+               <li><strong>Clientes atendidos:</strong> 95</li>
+            </ul>
+         </div>
+
+         <div class="profile__actions">
+            <button class="profile__button">Editar Perfil</button>
+            <button class="profile__button profile__button--danger" onclick="window.location.href='../page/motopet.html'">Sair</button>
+         </div>
+      </section>
+   </main>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="../script/perfilMotoPet.js"></script>
+</body>
+</html>
